@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Attendance Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Faculty Attendance Page</h1>
+    
+    <div class="container">
+        <form id="attendanceForm">
+            <div class="form-group">
+                <label for="Department">Select Department:</label>
+                <select id="Department" required>
+                    <option value="">Select</option>
+                    <option value="CSE">CSE</option>
+                    <option value="AIML">AIML</option>
+                    <option value="CS">CS</option>
+                    <option value="DS">DS</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="OTHERS">OTHERS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Date">Date Of Attendance:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="status">Attendance Status:</label>
+                <select id="status" required>
+                    <option value="">Select</option>
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
